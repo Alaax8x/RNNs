@@ -34,10 +34,10 @@ print(f"Sentence lengths: {max(lengths)}")
 print(f"Mean length: {np.mean(lengths)}")
 
 # Calculating maximum length of sentences
-def max_length(sentences_with_tokens, max_threshold=700):
+def max_length(sentences_with_tokens, max_threshold=200):
     return min(max(len(d.split()) for d in sentences_with_tokens), max_threshold)
 
-max_length = max_length(sentences, max_threshold=700)
+max_length = max_length(sentences, max_threshold=200)
 
 
 # Group sentences into a dictionary
